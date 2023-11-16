@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Basic&display=swap");
+* {
+  font-family: "Basic", sans-serif;
+}
+
+:root {
+   --text-color: #020e35;
+   --bg-gradient: linear-gradient(270deg, #8c32f0 0%, #e73587 100%);
+   --text-white: #ffffff;
+ }
+
+body {
+   font-family: "Basic";
+ }
+
+ .contact .text-contact .text-question {
+   color: var(--text-color);
+   font-size: 20px;
+   letter-spacing: 1px;
+ }
+ .contact .text-contact h1 {
+   color: var(--text-color);
+   font-size: 4rem;
+   margin-top: 10px;
+   font-weight: bold;
+   letter-spacing: 1.5px;
+ }
+ .contact .text-contact span {
+   color: rgba(231, 53, 135, 1);
+ }
+ .contact .form-contact .btn-contact {
+   color: var(--text-white);
+   background: var(--bg-gradient);
+   width: 100%;
+   text-align: center;
+   padding: 10px 0;
+   margin-top: 1rem;
+   border-radius: 8px;
+   border: none;
+ }
+ 
+ 
+ 
+ @media screen and (max-width: 700px) {
+  
+   .contact .text-contact h1 {
+     font-size: 2rem;
+   }
+   .contact .form-contact {
+     margin-top: 2rem;
+   }
+   .contact .btn-contact {
+     padding: 5px 0;
+   }
+  
+ }
+ 
