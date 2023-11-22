@@ -45,19 +45,19 @@
   color: white;
 }
 
-/* Hero Start */
-#hero {
+/* Banner Start */
+#banner {
   padding: 100px 0;
   position: relative;
   height: 100vh;
 }
 
-#hero h1 {
+#banner h1 {
   font-size: 97px;
   color: #020e35;
 }
 
-#hero .button-hero {
+#banner .button-banner {
   width: 140px;
   height: 40px;
   border: 0;
@@ -67,41 +67,41 @@
   font-size: 12px;
 }
 
-#hero .button-hero:hover {
+#banner .button-banner:hover {
   background: linear-gradient(270deg, #e73587 0%, #8c32f0 100%);
   color: white;
 }
 
-#hero img {
+#banner img {
   max-width: 100%;
   height: auto;
 }
 
 @media (max-width: 575.98px) {
   /* Extra small devices (portrait phones, less than 576px) */
-  #hero h1 {
+  #banner h1 {
     font-size: 2rem;
   }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   /* Small devices (landscape phones, 576px and up) */
-  #hero h1 {
+  #banner h1 {
     font-size: 2.5rem;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   /* Medium devices (tablets, 768px and up) */
-  #hero h1 {
+  #banner h1 {
     font-size: 3rem;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
   /* Large devices (desktops, 992px and up) */
-  #hero h1 {
+  #banner h1 {
     font-size: 3rem;
   }
 }
-/* Hero End */
+/* Banner End */
