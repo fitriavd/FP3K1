@@ -1,17 +1,325 @@
-@import url("https://fonts.googleapis.com/css2?family=Basic&display=swap");
+:root {
+  --text-color: #020e35;
+  --bg-gradient: linear-gradient(270deg, #8c32f0 0%, #e73587 100%);
+  --text-white: #ffffff;
+}
+
 * {
+  margin: 0;
   font-family: "Basic", sans-serif;
 }
 
-:root {
-   --text-color: #020e35;
-   --bg-gradient: linear-gradient(270deg, #8c32f0 0%, #e73587 100%);
-   --text-white: #ffffff;
- }
+/* Header Start */
+.navbar {
+  padding: 0;
+  overflow: hidden;
+}
 
-body {
-   font-family: "Basic";
- }
+.navbar-brand-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.navbar-brand {
+  background-color: rgba(2, 14, 53, 1);
+  border-bottom: 6px solid;
+  border-image: linear-gradient(270deg, #8c32f0 0%, #e73587 100%);
+  border-image-slice: 1;
+  padding: 20px;
+  height: 100px;
+}
+
+.navbar-nav .nav-link {
+  margin-right: 15px;
+  transition: background 0.3s ease, color 0.3s ease;
+  color: black;
+}
+
+.navbar-nav .nav-link:hover {
+  background: linear-gradient(270deg, #e73587 0%, #8c32f0 100%);
+  color: white;
+  width: 107px;
+  height: 40px;
+  text-align: center;
+}
+/* Header End */
+
+.content-button {
+  background: linear-gradient(270deg, #8c32f0 0%, #e73587 100%);
+  color: white;
+}
+
+/* Banner Start */
+#banner {
+  padding-top: 100px;
+  position: relative;
+}
+
+#banner h1 {
+  font-size: 97px;
+  color: #020e35;
+}
+
+#banner .button-banner {
+  width: 140px;
+  height: 40px;
+  border: 0;
+  background: linear-gradient(270deg, #8c32f0 0%, #e73587 100%);
+  color: white;
+  transition: background 0.3s ease, color 0.3s ease;
+  font-size: 12px;
+}
+
+#banner .button-banner:hover {
+  background: linear-gradient(270deg, #e73587 0%, #8c32f0 100%);
+  color: white;
+}
+
+#banner img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 575.98px) {
+  /* Extra small devices (portrait phones, less than 576px) */
+  #banner h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* Small devices (landscape phones, 576px and up) */
+  #banner h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Medium devices (tablets, 768px and up) */
+  #banner h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* Large devices (desktops, 992px and up) */
+  #banner h1 {
+    font-size: 3rem;
+  }
+}
+/* Banner End */
+.circle {
+  width: 276px;
+  height: 276px;
+  border-radius: 276px;
+  background: #f0f3fa;
+  position: absolute;
+  left: -10%;
+}
+
+.line {
+  width: 100px;
+  margin-top: -10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  border: none;
+  border-top: 2px solid #e73587;
+}
+
+.about-us {
+  padding-top: 63px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 823px;
+}
+
+.card-box {
+  margin: 50px 134px 0px 134px;
+  position: relative;
+  height: 242px;
+}
+
+.card {
+  transition: transform 0.5s;
+  width: 377px;
+  height: 583px;
+  margin-right: 34px;
+  position: relative;
+  padding-top: 17px;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.15);
+    content: "";
+    opacity: 0;
+    z-index: -1;
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale3d(1.006, 1.006, 1);
+
+    &::after {
+      opacity: 1;
+    }
+  }
+}
+
+.card__one {
+  transition: transform 0.5s;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.15);
+    content: "";
+    opacity: 0;
+    z-index: -1;
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale3d(1.006, 1.006, 1);
+
+    &::after {
+      opacity: 1;
+    }
+  }
+}
+
+.card h6 {
+  margin-top: 5px;
+}
+.card p {
+  margin-top: 22px;
+}
+
+.btn-custom {
+  color: #f0f3fa;
+  width: 140px;
+  height: 40px;
+  background: linear-gradient(270deg, #8c32f0 0%, #e73587 100%);
+  border: none;
+  position: absolute;
+  bottom: 31px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.btn-arrow {
+  width: 76px;
+  height: 76px;
+  border-radius: 100%;
+  background: linear-gradient(270deg, #8c32f0 0%, #e73587 100%);
+  border: 2px solid #fff;
+  margin-top: 200px;
+}
+
+.ourWork {
+  background-color: #020e35;
+  padding-bottom: 30px;
+}
+
+.title-ourwork {
+  color: var(--text-white);
+  text-align: center;
+  font-size: 40px;
+}
+
+.garis-title-ourwork {
+  width: 100px;
+  height: 2px;
+  background-color: #e73587;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.bg-color-img {
+  display: flex;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+.desc-content-ourwork {
+  color: var(--text-white);
+}
+
+.desc-content-ourwork h4 {
+  font-size: 30px;
+}
+
+.desc-content-ourwork h5 {
+  font-size: 15px;
+  letter-spacing: 3px;
+  padding-bottom: 30px;
+}
+
+.line {
+  border: 2px dashed #fff;
+}
+
+.see-all-more {
+  background: var(--bg-gradient);
+  border-radius: 2px;
+  color: var(--text-white);
+  padding: 8px;
+  font-size: 18px;
+  margin-top: 40px;
+  transition: all 0.5s;
+  width: 200px;
+}
+
+.see-all-more span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.see-all-more span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.see-all-more:hover span {
+  padding-right: 25px;
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.35);
+}
+
+.see-all-more:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* Smartphones */
+@media screen and (max-width: 670px) {
+  .bg-color-img .img-ourwork {
+    width: 200px;
+    height: 170px;
+  }
+
+  .bg-color-img img {
+    width: 300px;
+    height: 150px;
+  }
+}
 
  .contact .text-contact .text-question {
    color: var(--text-color);
@@ -40,7 +348,6 @@ body {
  }
  
  
- 
  @media screen and (max-width: 700px) {
   
    .contact .text-contact h1 {
@@ -54,4 +361,4 @@ body {
    }
   
  }
- 
+
