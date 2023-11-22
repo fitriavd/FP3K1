@@ -47,9 +47,8 @@
 
 /* Banner Start */
 #banner {
-  padding: 100px 0;
+  padding-top: 100px;
   position: relative;
-  height: 100vh;
 }
 
 #banner h1 {
