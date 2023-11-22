@@ -1,0 +1,118 @@
+.circle {
+  width: 276px;
+  height: 276px;
+  border-radius: 276px;
+  background: #f0f3fa;
+  position: absolute;
+  left: -10%;
+}
+
+.line {
+  width: 100px;
+  margin-top: -10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  border: none;
+  border-top: 2px solid #e73587;
+}
+
+.about-us {
+  padding-top: 63px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 823px;
+}
+
+.card-box {
+  margin: 50px 134px 0px 134px;
+  position: relative;
+  height: 242px;
+}
+
+.card {
+  transition: transform 0.5s;
+  width: 377px;
+  height: 583px;
+  margin-right: 34px;
+  position: relative;
+  padding-top: 17px;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.15);
+    content: "";
+    opacity: 0;
+    z-index: -1;
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale3d(1.006, 1.006, 1);
+
+    &::after {
+      opacity: 1;
+    }
+  }
+}
+
+.card__one {
+  transition: transform 0.5s;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.15);
+    content: "";
+    opacity: 0;
+    z-index: -1;
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale3d(1.006, 1.006, 1);
+
+    &::after {
+      opacity: 1;
+    }
+  }
+}
+
+.card h6 {
+  margin-top: 5px;
+}
+.card p {
+  margin-top: 22px;
+}
+
+.btn-custom {
+  color: #f0f3fa;
+  width: 140px;
+  height: 40px;
+  background: linear-gradient(270deg, #8c32f0 0%, #e73587 100%);
+  border: none;
+  position: absolute;
+  bottom: 31px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.btn-arrow {
+  width: 76px;
+  height: 76px;
+  border-radius: 100%;
+  background: linear-gradient(270deg, #8c32f0 0%, #e73587 100%);
+  border: 2px solid #fff;
+  margin-top: 200px;
+}
