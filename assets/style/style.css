@@ -268,10 +268,6 @@
   padding-bottom: 30px;
 }
 
-.line {
-  border: 2px dashed #fff;
-}
-
 .see-all-more {
   background: var(--bg-gradient);
   border-radius: 2px;
